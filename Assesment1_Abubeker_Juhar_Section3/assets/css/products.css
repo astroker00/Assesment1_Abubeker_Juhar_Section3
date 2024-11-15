@@ -1,0 +1,121 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #d3f9d8; /* Very light green */
+    width: 100%;
+}
+
+header h1 {
+    margin: 0; /* Removes default margin */
+    font-size: 36px; /* Adjust the font size as needed */
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 80px; /* Space between navigation items */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* No margin on the last item */
+}
+
+nav a {
+    color: #0b9155; /* Dark green text */
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #808000; /* Olive color when hovered */
+}
+
+body {
+    background-color: #f0f0f0; /* A slightly darker white, light gray */
+    font-family: Arial, sans-serif; /* Optional: You can specify your preferred font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Product List */
+.product-list {
+    display: flex;
+    gap: 80px; /* Space between product items */
+    padding: 0 220px; /* Padding around the list */
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+/* Product Box */
+.product {
+    flex: 1; /* Flexbox ensures equal space for each product */
+    padding: 20px;
+    height: 700px; /* Adjust height to fit content */
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);;
+}
+
+h2 {
+    margin-left: 150px; /* Reduces space below the heading */
+}
+
+
+.product:nth-child(2) img {
+    width: 100%; /* Middle image will be half the size */
+    height: 50%; /* Adjust height as needed to maintain proportion */
+}
+
+
+/* Product Image */
+.product img {
+    width: 100%; /* Ensures the image fills the product box width */
+    height: 70%; /* Maintain aspect ratio */
+    border-radius: 12px;
+}
+
+/* Product Title */
+.product h2 {
+    margin: 10px 0; /* Margin between title and image */
+    font-size: 30px; /* Adjust font size for the title */
+    white-space: nowrap; /* Prevent title wrapping */
+}
+
+/* Product Description */
+.product .description {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.price {
+    color: #0b9155; /* Dark green, same as the nav text color */
+    font-size: 18px; /* You can adjust the font size if needed */
+    font-weight: bold; /* Optional: Makes the price bold for emphasis */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #074d2d; /* Dark green color */;
+    color: white;
+    margin-top: 50px;
+}
